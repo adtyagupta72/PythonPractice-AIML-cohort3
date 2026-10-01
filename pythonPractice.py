@@ -46,48 +46,75 @@ function abc()
 # profession = "Software developer"
 # experience = 10
 # print("Hello, I am", name, ". I am a ", profession, " professionally. And I have around ", experience, " years experience with it!")
-x = 5
-print("x: ", x)
-print(type(x))
-x = "Hello World"
-print("x: ", x)
-print(type(x))
-x = 20.5
-print("x: ", x)
-print(type(x))
-x = 1j
-print("x: ", x)
-print(type(x))
-x = ["apple", "banana", "cherry"]
-print("x: ", x)
-print(type(x))
-x = ("apple", "banana", "cherry")
-print("x: ", x)
-print(type(x))
-x = range(6)
-print("x: ", x)
-print(type(x))
-x = {"name" : "John", "age" : 36}
-print("x: ", x)
-print(type(x))
-x = {"apple", "banana", "cherry"}
-print("x: ", x)
-print(type(x))
-x = frozenset({"apple", "banana", "cherry"})
-print("x: ", x)
-print(type(x))
-x = True
-print("x: ", x)
-print(type(x))
-x = b"Hello"
-print("x: ", x)
-print(type(x))
-x = bytearray(5)
-print("x: ", x)
-print(type(x))
-x = memoryview(bytes(5))
-print("x: ", x)
-print(type(x))
-x = None
-print("x: ", x)
-print(type(x))
+# x = 5
+# print("x: ", x)
+# print(type(x))
+# x = "Hello World"
+# print("x: ", x)
+# print(type(x))
+# x = 20.5
+# print("x: ", x)
+# print(type(x))
+# x = 1j
+# print("x: ", x)
+# print(type(x))
+# x = ["apple", "banana", "cherry"]
+# print("x: ", x)
+# print(type(x))
+# x = ("apple", "banana", "cherry")
+# print("x: ", x)
+# print(type(x))
+# x = range(6)
+# print("x: ", x)
+# print(type(x))
+# x = {"name" : "John", "age" : 36}
+# print("x: ", x)
+# print(type(x))
+# x = {"apple", "banana", "cherry"}
+# print("x: ", x)
+# print(type(x))
+# x = frozenset({"apple", "banana", "cherry"})
+# print("x: ", x)
+# print(type(x))
+# x = True
+# print("x: ", x)
+# print(type(x))
+# x = b"Hello"
+# print("x: ", x)
+# print(type(x))
+# x = bytearray(5)
+# print("x: ", x)
+# print(type(x))
+# x = memoryview(bytes(5))
+# print("x: ", x)
+# print(type(x))
+# x = None
+# print("x: ", x)
+# print(type(x))
+
+x = 10
+y = 14
+
+z = x + y
+print(z)
+print(x + y)
+
+z = x - y
+print(z)
+print(x - y)
+
+z = y - x
+print(z)
+print(y - x)
+
+z = x * y
+print(z)
+print(x * y)
+
+z = x / y
+print(z)
+print(x / y)
+
+z = y / x
+print(z)
+print(y / x)
