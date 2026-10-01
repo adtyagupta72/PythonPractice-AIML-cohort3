@@ -150,13 +150,42 @@ function abc()
 # x += 2      # x = x + 2
 # print(x)
 
+# a = 10
+# b = 15
+
+# print("a == b: ",  a == b)
+# print("a < b: ", a < b)
+# print("a > b: ", a > b)
+
+# print("a <= b: ",  a <= b )
+# print("a >= b", a >= b )
+
+'''
+A           B              A and B
+True        True            True
+True        False           False
+False       False           False
+False       True            False
+
+A           B              A or B
+True        True            True
+True        False           True
+False       False           False
+False       True            True
+
+A           not A
+True         False
+False        True
+'''
 a = 10
-b = 15
+b = 12
+c = 14
+# print( a<b and b>c )
+# print( a<b or b>c )
 
-print("a == b: ",  a == b)
-print("a < b: ", a < b)
-print("a > b: ", a > b)
+print(a is 10)
+print(a is 12)
 
-print("a <= b: ",  a <= b )
-print("a >= b", a >= b )
+print(a is not 10)
+print(a is not 12)
 
