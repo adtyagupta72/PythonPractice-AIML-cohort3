@@ -93,28 +93,40 @@ function abc()
 # print(type(x))
 
 x = 10
-y = 14
+y = 18
 
-z = x + y
-print(z)
-print(x + y)
+# z = x + y
+# print(z)
+# print(x + y)
 
-z = x - y
-print(z)
-print(x - y)
+# z = x - y
+# print(z)
+# print(x - y)
 
-z = y - x
-print(z)
-print(y - x)
+# z = y - x
+# print(z)
+# print(y - x)
 
-z = x * y
-print(z)
-print(x * y)
+# z = x * y
+# print(z)
+# print(x * y)
 
-z = x / y
-print(z)
-print(x / y)
+# z = x / y
+# print(z)
+# print(x / y)
 
 z = y / x
-print(z)
+# print(z)
 print(y / x)
+print(y // x)
+
+# 10.49    - 10
+# 10.55    - 11
+# 10.10    - 10
+# 10.89    - 11
+
+print( 5 % 2 )      #1
+print(27 % 20)      #7
+
+print( 2 ** 2 )       #4
+print( 3 ** 5 )
