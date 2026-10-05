@@ -177,15 +177,55 @@ A           not A
 True         False
 False        True
 '''
-a = 10
-b = 12
-c = 14
+# a = 10
+# b = 12
+# c = 14
 # print( a<b and b>c )
 # print( a<b or b>c )
 
-print(a is 10)
-print(a is 12)
+# print(a is 10)
+# print(a is 12)
 
-print(a is not 10)
-print(a is not 12)
+# print(a is not 10)
+# print(a is not 12)
 
+'''
+
+2 - 0000 0010
+A       B       A & B
+1       1         1
+1       0         0
+0       0         0
+0       1         0
+            
+A       B       A | B
+1       1         1
+1       0         1
+0       0         0
+0       1         1
+
+A   ~A
+1    0
+0    1
+
+A       B       A ^ B
+1       1         0
+1       0         1
+0       1         1
+0       0         0
+
+<< - Left shift operator
+>> - Right shift operator
+
+55 - 110111
+55 << 1 => (110111 <- 101110)
+1 5 0 4 1 3 1 2 1 1 0 0
+32 + 0 + 8 + 4 + 2 + 0 = 46
+
+55 >> 1 (110111 -> 011011) 1 + 2 + 8 + 16 => 27
+
+55 << 2 (110111 <- 011100)
+
+110111
+
+'''
