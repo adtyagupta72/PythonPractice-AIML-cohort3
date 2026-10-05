@@ -227,5 +227,19 @@ A       B       A ^ B
 55 << 2 (110111 <- 011100)
 
 110111
-
 '''
+
+name = input("Please enter your name: ")
+print("Hello ", name)
+
+x = int(input("Enter first value for sum: "))
+y = int(input("Enter second value for sum: "))
+z = x + y
+print("Sum: ",z)
+
+x = input("Enter first value for sum: ")
+y = input("Enter second value for sum: ")
+z = int(x) + int(y)
+print("Sum: ",z)
+
+# input function always returns a string
