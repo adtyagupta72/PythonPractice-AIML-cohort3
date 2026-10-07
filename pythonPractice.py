@@ -229,17 +229,28 @@ A       B       A ^ B
 110111
 '''
 
-name = input("Please enter your name: ")
-print("Hello ", name)
+# name = input("Please enter your name: ")
+# print("Hello ", name)
 
-x = int(input("Enter first value for sum: "))
-y = int(input("Enter second value for sum: "))
-z = x + y
-print("Sum: ",z)
+# x = int(input("Enter first value for sum: "))
+# y = int(input("Enter second value for sum: "))
+# z = x + y
+# print("Sum: ",z)
 
-x = input("Enter first value for sum: ")
-y = input("Enter second value for sum: ")
-z = int(x) + int(y)
-print("Sum: ",z)
+# x = input("Enter first value for sum: ")
+# y = input("Enter second value for sum: ")
+# z = int(x) + int(y)
+# print("Sum: ",z)
 
 # input function always returns a string
+
+print("2 == 2: ", 2 == 2)
+print("2 == 2.: ", 2 == 2.)
+print("2 == 2.5: ", 2 == 2.5)
+print('abc' == 'abc')
+abc = 2
+print("abc" == abc)
+print(2 == abc)
+print(1 == abc)
+abc = 0
+print(1 == abc)
