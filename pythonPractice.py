@@ -244,13 +244,38 @@ A       B       A ^ B
 
 # input function always returns a string
 
-print("2 == 2: ", 2 == 2)
-print("2 == 2.: ", 2 == 2.)
-print("2 == 2.5: ", 2 == 2.5)
-print('abc' == 'abc')
-abc = 2
-print("abc" == abc)
-print(2 == abc)
-print(1 == abc)
-abc = 0
-print(1 == abc)
+# print("2 == 2: ", 2 == 2)
+# print("2 == 2.: ", 2 == 2.)
+# print("2 == 2.5: ", 2 == 2.5)
+# print('abc' == 'abc')
+# abc = 2
+# print("abc" == abc)
+# print(2 == abc)
+# print(1 == abc)
+# abc = 0
+# print(1 == abc)
+'''
+if the_weather_is_good:
+    go_for_a_walk()
+    have_fun()
+else:
+    go_to_a_theater()
+    enjoy_the_movie()
+    have_lunch()
+
+if the_weather_is_good:
+    if nice_restaurant_is_found:
+        have_lunch()
+    else:
+        eat_a_sandwich()
+else:
+    if tickets_are_available:
+        go_to_the_theater()
+    else:
+        go_shopping()
+
+  '''
+
+age = 17
+if age >= 18:
+    print("Eligible")
