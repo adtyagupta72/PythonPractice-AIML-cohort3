@@ -276,6 +276,91 @@ else:
 
   '''
 
-age = 17
-if age >= 18:
-    print("Eligible")
+# age = 17
+# if age >= 18:
+#     print("Eligible")
+
+# largest_number = -999999999
+# number = int(input())
+# if number == -1:
+#     print(largest_number)
+#     exit()
+# if number > largest_number:
+#     largest_number = number
+
+# while True:
+#     print("I'm stuck inside a loop.")
+
+# num = 1
+# while num <= 5:
+#     print(num)
+#     num += 1 # num = num + 1
+
+# Write a program to print even numbers from 2 to 10 using a while loop.
+# num = 2
+# while num <= 10:
+#     if num % 2 == 0:
+#         print(num)
+#     num += 1
+
+# num = 2
+# while num <= 10:
+#     print(num)
+#     num += 2
+
+# Write a program to print odd numbers from 1 to 9 using a while loop.
+
+# Write a program to print numbers from 10 down to 1.
+
+# Write a program to calculate the sum of numbers from 1 to 10 using a while loop.
+
+# Write a program to print the multiplication table of 5 using a while loop.
+
+# num = 1
+# while num <= 10:
+#     print(num * 5)
+#     num += 1
+    
+#Write a program to print numbers greater than 5 from 1 to 10 using a while loop.
+
+# num = 1
+# while num <= 10:
+#     if num <= 5:
+#         print(num)
+#     num += 1
+
+#Write a program to print numbers between 1 and 20 that are divisible by 3.
+
+# num =1
+# while num <=20:
+#     if num % 3 == 0 :
+#         print(num)
+#     num +=1
+
+# print(7 % 3) # 1
+# print(5 % 3) # 2
+
+# Write a program to find the factorial of 5 using a while loop.
+'''
+5 * 4 * 3 * 2 * 1
+num = 5 | 4 | 3 | 2 | 1
+sum = 1
+sum = num * sum
+'''
+num = 5
+sum = 1
+while num >=1:
+    sum *= num
+    num -= 1
+print(sum)
+''' Dry run = running code without executing it
+num(>=1)     sum     
+5           1
+4           5
+3           20
+2           60
+1           120
+0           120
+
+Output: 120
+'''
