@@ -385,10 +385,44 @@ Output: 120
 # print("If else is done!")
 
 #Write a program to reverse the number 76543 using a while loop.
-num = 76543
-res = 0
-while num > 0:
-    temp = num % 10
-    res = (res * 10) + temp
-    num //= 10
-print(res)
+# num = 76543
+# res = 0
+# while num > 0:
+#     temp = num % 10
+#     res = (res * 10) + temp
+#     num //= 10
+# print(res)
+
+# for count in range(100):
+#     pass
+#     print(count)
+
+# print(range(0, 100))
+
+# for count in range(1, 6):
+#     print(count)
+
+# iterator
+# (0, 5)
+# (0, 6)
+# (1, 5)
+# (1, 6)
+
+#Write a program to print even numbers from 2 to 10 using a for loop.
+
+# for count in range(1, 11):
+#     if count % 2 == 0:
+#         print(count)
+# Write a program to print odd numbers from 1 to 9 using a for loop.
+
+# for count in range(1, 11):
+#     if count % 2 == 1:
+#         print(count)
+
+# Write a program to print numbers from 10 down to 1 using a for loop.
+
+# for count in range(10, -1, -2):
+#     print(count)
+
+#Write a program to calculate the sum of numbers from 1 to 10 using a for loop.
+
