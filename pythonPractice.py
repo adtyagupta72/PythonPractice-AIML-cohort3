@@ -347,12 +347,12 @@ num = 5 | 4 | 3 | 2 | 1
 sum = 1
 sum = num * sum
 '''
-num = 5
-sum = 1
-while num >=1:
-    sum *= num
-    num -= 1
-print(sum)
+# num = 5
+# sum = 1
+# while num >=1:
+#     sum *= num
+#     num -= 1
+# print(sum)
 ''' Dry run = running code without executing it
 num(>=1)     sum     
 5           1
@@ -364,3 +364,31 @@ num(>=1)     sum
 
 Output: 120
 '''
+
+# num = 1
+# while num <= 10:
+#     print(num)
+#     num+=1
+
+
+# num = 10
+# while num >= 1:
+#     print(num)
+#     num -=1
+
+# num = 2
+# if num == 3:
+#     print("This is 3")
+# else:
+#     print("this is else")
+
+# print("If else is done!")
+
+#Write a program to reverse the number 76543 using a while loop.
+num = 76543
+res = 0
+while num > 0:
+    temp = num % 10
+    res = (res * 10) + temp
+    num //= 10
+print(res)
