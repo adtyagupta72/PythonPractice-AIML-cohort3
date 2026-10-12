@@ -433,3 +433,10 @@ Output: 120
 
 #Write a program to print the multiplication table of 5 using a for loop.
 
+for count in range(1, 11):
+    print(f' 5 x {count} = {5 * count}')
+
+# Write a program to print numbers from 1 to 20 that are divisible by 3.
+
+#Write a program to find the factorial of 5 using a for loop.
+
