@@ -426,3 +426,10 @@ Output: 120
 
 #Write a program to calculate the sum of numbers from 1 to 10 using a for loop.
 
+# sum = 0
+# for count in range(1, 11):
+#     sum += count
+# print(sum)
+
+#Write a program to print the multiplication table of 5 using a for loop.
+
