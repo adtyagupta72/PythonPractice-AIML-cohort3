@@ -433,10 +433,76 @@ Output: 120
 
 #Write a program to print the multiplication table of 5 using a for loop.
 
-for count in range(1, 11):
-    print(f' 5 x {count} = {5 * count}')
+# for count in range(1, 11):
+#     print(f' 5 x {count} = {5 * count}')
 
 # Write a program to print numbers from 1 to 20 that are divisible by 3.
 
 #Write a program to find the factorial of 5 using a for loop.
 
+# a = 10
+
+# print(a == 10 and a > 9)
+
+# if a == 10 and a > 9:
+#     print("This will satisfy")
+
+# num = 1
+# print("Loop is starting now")
+# print("----====-------====------")
+# while num <= 10:
+#     if num == 6:
+#         break
+#     else: 
+#         print(num)
+#     num += 1
+# print("Loop is ended now")
+# print("----====-------====------")
+
+# num = 0
+# print("Loop is starting now")
+# print("----====-------====------")
+# while num < 10:
+#     num += 1
+#     if num == 5:
+#         continue
+#     else: 
+#         print(num)
+# print("Loop is ended now")
+# print("----====-------====------")
+
+#Write a program to print numbers from 1 to 10 and stop when the number is divisible by 7.
+
+#Write a program to print numbers from 1 to 10, skipping all even numbers.
+
+# i = 0
+# j = 1
+
+# print( i and j )
+# print( i & j )
+
+# a = " "
+
+# if a:
+#     print("a = True")
+
+numbers = [10, 20, 30, 40, 50]
+print(numbers)
+print(type(numbers))
+
+'''
+0x0011    0x0013  0x0015      0x0017      0x0019
+[10,       20,      30,         40,         50]
+ 0   1   2   3   4
+
+1, 2, 3, 4, 5
+
+numbers[0] => 10    
+    => numbers[0] => address of numbers + (index * size of elem)
+                     0x0011 + (0 * 2) => 0x0011
+numbers[1] => 20
+    => numbers[0] => address of numbers + (index * size of elem)
+                     0x0011 + (1 * 2) => 0x0013
+
+
+'''
