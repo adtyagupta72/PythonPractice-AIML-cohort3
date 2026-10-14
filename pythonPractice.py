@@ -485,10 +485,23 @@ Output: 120
 
 # if a:
 #     print("a = True")
+# numbers = []
+# numbers = [10, 20, 30, 40, 50]
+# print(numbers)
+# print(type(numbers))
 
-numbers = [10, 20, 30, 40, 50]
-print(numbers)
-print(type(numbers))
+# print(f'first element: {numbers[0]}')
+# print(f'second element: {numbers[1]}')
+# print(f'third element: {numbers[2]}')
+# print(f'fourth element: {numbers[3]}')
+
+# numbers[1] = 100
+# print(f'second element: {numbers[1]}')
+# print(numbers)
+
+# numbers[0] = numbers[2]
+# print(numbers)
+
 
 '''
 0x0011    0x0013  0x0015      0x0017      0x0019
@@ -503,6 +516,82 @@ numbers[0] => 10
 numbers[1] => 20
     => numbers[0] => address of numbers + (index * size of elem)
                      0x0011 + (1 * 2) => 0x0013
-
-
 '''
+
+# print(len(numbers))
+
+# myList = ["One", 2, 2.5, True, False, [1, 2, 3]]
+# print(len(myList))
+# print(myList)
+# myList[0] = 1
+# print(myList)
+# print(type(myList))
+# print(len(myList))
+
+# del myList[0]
+# print(len(myList))
+# print(myList)
+
+# print(myList[0])
+# print(myList[3])
+
+# del myList
+# print(myList)
+# print(myList[0])
+
+# print(myList[-1])
+# print(myList[-2])
+
+#list = [5,4,3,2,1]
+# print(list)
+# print(f'Length of list: {len(list)}')
+# list.append(6) 
+# print(list)
+# print(f'Length of list: {len(list)}')
+
+# list.insert(1, 10)
+
+# print(list)
+# print(f'Length of list: {len(list)}')
+
+
+# list = [5,4,3,2,1]
+
+# for index in range(len(list)):
+#     print("Element: ", list[index])
+
+# for index in range(len(list)):
+#     print(f'list[{index}] -> ', list[index])
+
+# my_list = []
+
+# for count in range(1, 11):
+#     my_list.append(count)
+
+# print(my_list)
+
+# for index in range(len(my_list)):
+#     my_list[index] = my_list[index] + 10
+
+# print(my_list)
+
+a = 10
+b = 20
+
+# 1 ---------
+# b = a + b
+# a = b - a
+# b = b - a
+# 2 ---------
+# c = b
+# b = a
+# a = c
+# 3 ---------
+# b = a * b
+# a = b // a
+# b = b // a
+
+a, b = b, a
+
+print(a)
+print(b)
