@@ -575,8 +575,8 @@ numbers[1] => 20
 
 # print(my_list)
 
-a = 10
-b = 20
+# a = 10
+# b = 20
 
 # 1 ---------
 # b = a + b
@@ -591,7 +591,62 @@ b = 20
 # a = b // a
 # b = b // a
 
-a, b = b, a
+# a, b = b, a
 
-print(a)
-print(b)
+# print(a)
+# print(b)
+
+# list = [8, 10, 6, 2, 4]
+list = [2, 4, 8, 6, 10]
+
+count = 0
+swapped = True
+for index1 in range(len(list) - 1):
+    swapped = False
+    for index in range(len(list) - (index1 + 1)):
+        count += 1
+        if list[index] > list[index + 1]:
+            swapped = True
+            list[index], list[index + 1] = list[index + 1], list[index]
+    if swapped == False:
+        break
+
+print(list)
+# print("Loop ran for: ", count, " times")
+
+'''
+1                       4
+[8, 10, 6, 2, 4]
+[8, 6, 10, 2, 4]
+[8, 6, 2, 10, 4]
+[8, 6, 2, 4, 10]
+
+2                       4
+[6, 8, 2, 4, 10]
+[6, 2, 8, 4, 10]
+[6, 2, 4, 8, 10]
+[6, 2, 4, 8, 10]        X
+
+3                       4
+[2, 6, 4, 8, 10]
+[2, 4, 6, 8, 10]
+[2, 4, 6, 8, 10]        X
+[2, 4, 6, 8, 10]        X
+
+4                       4
+[2, 4, 6, 8, 10]
+[2, 4, 6, 8, 10]        X
+[2, 4, 6, 8, 10]        X
+[2, 4, 6, 8, 10]        X
+
+'''
+swapped = True
+count = 0
+while swapped:
+    swapped = False
+    for index in range(len(list) - 1):
+        count += 1
+        if list[index] > list[index + 1]:
+            swapped = True
+            list[index], list[index + 1] = list[index + 1], list[index]
+print(count)
