@@ -640,13 +640,35 @@ print(list)
 [2, 4, 6, 8, 10]        X
 
 '''
-swapped = True
-count = 0
-while swapped:
-    swapped = False
-    for index in range(len(list) - 1):
-        count += 1
-        if list[index] > list[index + 1]:
-            swapped = True
-            list[index], list[index + 1] = list[index + 1], list[index]
-print(count)
+# swapped = True
+# count = 0
+# while swapped:
+#     swapped = False
+#     for index in range(len(list) - 1):
+#         count += 1
+#         if list[index] > list[index + 1]:
+#             swapped = True
+#             list[index], list[index + 1] = list[index + 1], list[index]
+# print(count)
+
+# list_1 = [1]
+# list_2 = list_1
+# list_1[0] = 2
+# print(list_2)
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:4]
+print(new_list)
+
+new_list = my_list[0:]
+print(new_list)
+
+list = []
+temp = 0
+for index in range(0, 500):
+    list.append(index+1)
+
+# 175-450
+myNewList = list[174: 450]
+print(myNewList)
+
