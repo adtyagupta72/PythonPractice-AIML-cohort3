@@ -682,13 +682,35 @@ numbers[1] => 20
 # print("2 in my_list1: ", 2 in my_list1)
 # print("18 in my_list1: ", 18 in my_list1)
 
-row = []
-for i in range(8):
-    row.append("WHITE_PAWN")
-print(row)
-print(len(row))
+# row = []
+# for i in range(8):
+#     row.append("WHITE_PAWN")
+# print(row)
+# print(len(row))
 
-row = ["WHITE_PAWN1" for i in range(8)] # List comprehension
-print(row)
-print(len(row))
+# row = ["WHITE_PAWN1" for i in range(8)] # List comprehension
+# print(row)
+# print(len(row))
+
+# squares = [x ** 2 for x in range(10)]
+# print(squares)
+
+# squares = [x ** 2 for x in range(1, 11)]
+# print(squares)
+
+# # twos = [2 ** i for i in range(8)]
+# # print(twos)
+
+# odds = [x for x in squares if x % 2 != 0]
+# print(odds)
+
+# for element in squares:
+#     print(element)
+
+list = [1,2, 3, 4, 5]
+list1 = [6, 7, 8, 9, 10]
+list2 = list.extend(list1)
+print("list: ", list)
+print("list1: ", list1)
+print("list2: ", list2)
 
