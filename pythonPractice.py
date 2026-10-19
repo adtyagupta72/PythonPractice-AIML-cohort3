@@ -597,21 +597,21 @@ numbers[1] => 20
 # print(b)
 
 # list = [8, 10, 6, 2, 4]
-list = [2, 4, 8, 6, 10]
+# list = [2, 4, 8, 6, 10]
 
-count = 0
-swapped = True
-for index1 in range(len(list) - 1):
-    swapped = False
-    for index in range(len(list) - (index1 + 1)):
-        count += 1
-        if list[index] > list[index + 1]:
-            swapped = True
-            list[index], list[index + 1] = list[index + 1], list[index]
-    if swapped == False:
-        break
+# count = 0
+# swapped = True
+# for index1 in range(len(list) - 1):
+#     swapped = False
+#     for index in range(len(list) - (index1 + 1)):
+#         count += 1
+#         if list[index] > list[index + 1]:
+#             swapped = True
+#             list[index], list[index + 1] = list[index + 1], list[index]
+#     if swapped == False:
+#         break
 
-print(list)
+# print(list)
 # print("Loop ran for: ", count, " times")
 
 '''
@@ -656,19 +656,39 @@ print(list)
 # list_1[0] = 2
 # print(list_2)
 
-my_list = [10, 8, 6, 4, 2]
-new_list = my_list[1:4]
-print(new_list)
+# my_list = [10, 8, 6, 4, 2]
+# new_list = my_list[1:4]
+# print(new_list)
 
-new_list = my_list[0:]
-print(new_list)
+# new_list = my_list[0:]
+# print(new_list)
 
-list = []
-temp = 0
-for index in range(0, 500):
-    list.append(index+1)
+# list = []
+# for index in range(0, 500):
+#     list.append(index+1)
 
-# 175-450
-myNewList = list[174: 450]
-print(myNewList)
+# # 175-450
+# myNewList = list[174: 450]
+# print(myNewList)
+
+# my_list = [10, 8, 6, 4, 2]
+# my_list1 = my_list[:]
+# print("21 in my_list: ", 21 in my_list)
+# print("2 in my_list: ", 2 in my_list)
+
+# print(my_list1)
+# my_list1[2] = 18
+# print("21 in my_list1: ", 21 in my_list1)
+# print("2 in my_list1: ", 2 in my_list1)
+# print("18 in my_list1: ", 18 in my_list1)
+
+row = []
+for i in range(8):
+    row.append("WHITE_PAWN")
+print(row)
+print(len(row))
+
+row = ["WHITE_PAWN1" for i in range(8)] # List comprehension
+print(row)
+print(len(row))
 
