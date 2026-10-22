@@ -829,19 +829,26 @@ roll number         Name        Address
 '''
 
 
-def message():
-    print("Enter a value: ")
+# def message():
+#     print("Enter a value: ")
 
 # print("Starting now")
 # message()
 # print("Completed now")
 
 # print("Enter a value: ")
-message()
-a = int(input())
-# print("Enter a value: ")
-message()
-b = int(input())
-# print("Enter a value: ")
-message()
-c = int(input())
+# message()
+# a = int(input())
+# # print("Enter a value: ")
+# message()
+# b = int(input())
+# # print("Enter a value: ")
+# message()
+# c = int(input())
+
+def greet(name):        #Parameterised function
+    print("Hello", name)
+
+name = input("Enter your name :")
+greet(name)     #Arugumented function invocation
+
