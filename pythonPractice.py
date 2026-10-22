@@ -769,22 +769,22 @@ roll number         Name        Address
 # print(board)
 
 
-temps = [[h for h in range(24)] for d in range(31)]
+# temps = [[h for h in range(24)] for d in range(31)]
 # temps[row][col]
 # print(temps)
 
-sum = 0
-for i in range(len(temps)):
-    sum += temps[i][11]
-average = sum / len(temps)
-print("Average: ", average)
+# sum = 0
+# for i in range(len(temps)):
+#     sum += temps[i][11]
+# average = sum / len(temps)
+# print("Average: ", average)
 
-greater = -999999999
-for row in range(len(temps)):
-    for col in range(24):
-        if greater < temps[row][col]:
-            greater = temps[row][col]
-print("greater: ", greater)
+# greater = -999999999
+# for row in range(len(temps)):
+#     for col in range(24):
+#         if greater < temps[row][col]:
+#             greater = temps[row][col]
+# print("greater: ", greater)
 # print([1, 2, 3])
 
 '''
@@ -828,3 +828,20 @@ print("greater: ", greater)
 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]
 '''
 
+
+def message():
+    print("Enter a value: ")
+
+# print("Starting now")
+# message()
+# print("Completed now")
+
+# print("Enter a value: ")
+message()
+a = int(input())
+# print("Enter a value: ")
+message()
+b = int(input())
+# print("Enter a value: ")
+message()
+c = int(input())
