@@ -846,9 +846,23 @@ roll number         Name        Address
 # message()
 # c = int(input())
 
-def greet(name):        #Parameterised function
-    print("Hello", name)
+# def greet(name):        #Parameterised function
+#     print("Hello", name)
 
-name = input("Enter your name :")
-greet(name)     #Arugumented function invocation
+# name = input("Enter your name :")
+# greet(name)     #Arugumented function invocation
 
+# def greetWithDetails(firstName, rollNo):
+#     print("Hello RollNumber", rollNo, " ", firstName)
+
+# name = input("Enter your name :")
+# roll = int(input("Enter your rollNumber :"))
+# greetWithDetails(name, roll)
+# greetWithDetails(roll, name)
+
+def message(what, number):
+    print("Enter", what, "number", number)
+    
+message("telephone", 11)
+message("price", 5)
+message("number", "number")
