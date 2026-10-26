@@ -873,11 +873,88 @@ roll number         Name        Address
 # message(number1 = 11, what = "telephone")
 # message(number = 11, what = "telephone", xyz = "xyz")
 
-def adding(a, b, c):
-    print(a, "+", b, "+", c, "=", a + b + c)
+# def adding(a, b, c):
+#     print(a, "+", b, "+", c, "=", a + b + c)
 
-adding(1, 2, 3)
-adding(c = 1, b = 2, a = 3)
-adding(3, c = 1, b = 2)
-adding(a = 3, 1, c = 2)
+# adding(1, 2, 3)
+# adding(c = 1, b = 2, a = 3)
+# adding(3, c = 1, b = 2)
+# adding(a = 3, 1, c = 2)
 
+# def happy_new_year(wishes = True):
+#     print("Three...")
+#     print("Two...")
+#     print("One...")
+#     if not wishes:
+#         return
+#     print("Happy New Year!")
+
+# happy_new_year(False)
+
+# def greet():
+#     print(1)
+#     print(2)
+#     print(3)
+#     return
+#     print(4)
+
+# greet()
+
+# def sum(a, b):
+#     return a + b
+
+# result = sum(11, 32)
+# print(result)
+
+# def sum(a, b, c, d, e):
+#     return [a + 5, b + 5, c + 5, d + 5, e + 5]
+
+# result = sum(11, 32, 55, 90, 1)
+# print(result[0])
+# print(result[1])
+# print(result[2])
+# print(result[3])
+# print(result[4])
+
+# print(None + 2)
+# value = None
+# if value is None:
+#     print("Sorry, you don't carry any value")
+# print(type(None))
+# print(type(value))
+
+# def hello(check):
+#     if check is True:
+#         return
+
+# result = hello(False)
+# print(result)       #False
+
+# result = hello(True)
+# print(result)       #True
+'''
+hello(False) => 
+    check -> False  => None
+
+hello(True) =>
+    check -> True   => None
+'''
+
+# def strange_function(n):
+#     if(n % 2 == 0):
+#         return True
+# print(strange_function(2)) #=> True
+# print(strange_function(1)) #=> None
+
+def strange_list_fun(n):
+    strange_list = []
+    for i in range(0, n):
+        strange_list.insert(0, i)
+    return strange_list
+print(strange_list_fun(5)) #=> 4 / 0, 1, 2, 3, 4 / 0 / [4, 3, 2, 1, 0]
+
+'''
+list = [1, 2, 3]
+list.insert(0, 4) => 4, 1, 2, 3
+[1, 2, 3] => [4, => 1, 2, 3]
+'''
