@@ -860,9 +860,24 @@ roll number         Name        Address
 # greetWithDetails(name, roll)
 # greetWithDetails(roll, name)
 
-def message(what, number):
-    print("Enter", what, "number", number)
+# def message(number, what):
+#     print("Enter", what, "number", number)
+
+# def message(number, what, xyz):
+#     print("Enter", what, "number", number)
     
-message("telephone", 11)
-message("price", 5)
-message("number", "number")
+# message("telephone", 11)
+# message("price", 5)
+# message("number", "number")
+
+# message(number1 = 11, what = "telephone")
+# message(number = 11, what = "telephone", xyz = "xyz")
+
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+
+adding(1, 2, 3)
+adding(c = 1, b = 2, a = 3)
+adding(3, c = 1, b = 2)
+adding(a = 3, 1, c = 2)
+
