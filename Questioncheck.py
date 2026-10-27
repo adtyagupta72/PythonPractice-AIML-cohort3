@@ -1,10 +1,26 @@
-i = 1 
-while i <= 10 :     
-    if i % 7 == 0 :
-        break
-    else:
-        print(i)
-    i += 1
+numbers = [5, 2, 9, 1]
+numbers.sort()
+print(numbers)  
+
+# The data for this question
+numbers = [40, 10, 50, 20, 30]
+print(numbers.sort())
+
+# def solve(numbers):
+#     # Write your code here — print the result
+#     print(numbers.sort())
+
+
+# # Do not change the code below
+# solve(numbers)
+
+# i = 1 
+# while i <= 10 :     
+#     if i % 7 == 0 :
+#         break
+#     else:
+#         print(i)
+#     i += 1
 
 # i = 0  
 # while i < 10:
