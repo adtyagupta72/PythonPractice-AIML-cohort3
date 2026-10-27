@@ -1064,3 +1064,12 @@ tuple_3 = 1, 2, 3, 4, 5
 print("tuple_3: ", tuple_3)
 print("Type of tuple_3: ", type(tuple_3))
 
+tuple_4 = ()
+print("tuple_4: ", tuple_4)
+print("Type of tuple_4: ", type(tuple_4))
+tuple_5 = 1,
+print("tuple_5: ", tuple_5)
+print("Type of tuple_5: ", type(tuple_5))
+tuple_6 = "hello",
+print("tuple_6: ", tuple_6)
+print("Type of tuple_6: ", type(tuple_6))
