@@ -1054,22 +1054,43 @@ Print #5:   [2, 3]
 
 '''
 
-tuple_1 = (1, 2, 4, 8)
-print("tuple_1: ", tuple_1)
-print("Type of tuple_1: ", type(tuple_1))
-tuple_2 = 1., .5, .25, .125
-print("tuple_2: ", tuple_2)
-print("Type of tuple_2: ", type(tuple_2))
-tuple_3 = 1, 2, 3, 4, 5
-print("tuple_3: ", tuple_3)
-print("Type of tuple_3: ", type(tuple_3))
+# tuple_1 = (1, 2, 4, 8)
+# print("tuple_1: ", tuple_1)
+# print("Type of tuple_1: ", type(tuple_1))
+# tuple_2 = 1., .5, .25, .125
+# print("tuple_2: ", tuple_2)
+# print("Type of tuple_2: ", type(tuple_2))
+# tuple_3 = 1, 2, 3, 4, 5
+# print("tuple_3: ", tuple_3)
+# print("Type of tuple_3: ", type(tuple_3))
 
-tuple_4 = ()
-print("tuple_4: ", tuple_4)
-print("Type of tuple_4: ", type(tuple_4))
-tuple_5 = 1,
-print("tuple_5: ", tuple_5)
-print("Type of tuple_5: ", type(tuple_5))
-tuple_6 = "hello",
-print("tuple_6: ", tuple_6)
-print("Type of tuple_6: ", type(tuple_6))
+# tuple_4 = ()
+# print("tuple_4: ", tuple_4)
+# print("Type of tuple_4: ", type(tuple_4))
+# tuple_5 = 1,
+# print("tuple_5: ", tuple_5)
+# print("Type of tuple_5: ", type(tuple_5))
+# tuple_6 = "hello",
+# print("tuple_6: ", tuple_6)
+# print("Type of tuple_6: ", type(tuple_6))
+
+my_tuple = (1, 10, 100, 1000)
+# my_tuple.append(10000)
+# del my_tuple[0]
+# my_tuple[1] = -10
+print(my_tuple[0])
+print(my_tuple[1])
+print(my_tuple[2])
+print("Length of Tuple is: ", len(my_tuple))
+
+my_tuple1 = (10000, 100000)
+my_tuple2 = my_tuple + my_tuple1
+print(my_tuple2)
+print("Length of my_tuple2: ", len(my_tuple2))
+
+# my_tuple2 => 12
+my_tuple2 = my_tuple2 + (12,)
+print(my_tuple2)
+print("Length of my_tuple2: ", len(my_tuple2))
+
+# my_tuple2[0] = (13,)
