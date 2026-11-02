@@ -1163,30 +1163,132 @@ Print #5:   [2, 3]
 # print(len(dict))
 # print(type(dict))
 
-phone_numbers = {
-    'boss': 5551234567, 
-    'Suzy': 22657854310
-}
+# phone_numbers = {
+#     'boss': 5551234567, 
+#     'Suzy': 22657854310
+# }
 
-empty_dictionary = {}
+# empty_dictionary = {}
 
-print(phone_numbers['boss'])
-print(phone_numbers['Suzy'])
-# print(phone_numbers['Suzy12'])
+# print(phone_numbers['boss'])
+# print(phone_numbers['Suzy'])
+# # print(phone_numbers['Suzy12'])
 
-dictionary = {
-                "cat": "chat", 
-                "dog": "chien", 
-                "horse": "cheval"
-            }
-words = dictionary.keys()
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval"
+#             }
+# words = dictionary.keys()
 
-# words = ['cat', 'lion', 'horse', "dog"]
-for word in words:
-    if word in dictionary:
-        print(word, "->", dictionary[word])
-    else:
-        print(word, "is not in dictionary")
+# # words = ['cat', 'lion', 'horse', "dog"]
+# for word in words:
+#     if word in dictionary:
+#         print(word, "->", dictionary[word])
+#     else:
+#         print(word, "is not in dictionary")
 
-print(words)
-print(dictionary.keys())
+# print(words)
+# print(dictionary.keys())
+
+
+'''
+1, 2, fiz, 4, buz, fiz, 7, 8, fiz, buz, 11, fiz, 13, 14, fizbuz, 16......50
+'''
+
+# for elem in range(1, 51):
+#     if elem % 5 == 0 and elem % 3 == 0:
+#         print("FizBuz")
+#     elif elem % 5 ==0:
+#         print("Buz")
+#     elif elem % 3 ==0:
+#         print("Fiz")
+#     else:
+#         print(elem)
+
+# for elem in range(1, 51):
+#     if elem % 3 == 0:
+#         print("Fiz", end="")
+#     if elem % 5 ==0:
+#         print("Buz")
+#     if elem % 3 != 0 and elem % 5 != 0:
+#         print("\n", elem)
+
+# Brut force => Efficiency
+
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval"
+#             }
+# # print(dictionary.items())
+# '''
+# item => ("cat", "chat")
+# item => ("dog", "chien")
+# item => ("horse", "cheval")
+# '''
+# for item in dictionary.items():
+#     # print(item)
+#     print(item[0], ":", item[1])
+# print("-------")
+# print(dictionary.values())
+# print("-------")
+# for value in dictionary.values():
+#     print(value)
+
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval"
+#             }
+
+# dictionary1 = dictionary
+# print("dictionary: ", dictionary)
+# print("dictionary1: ", dictionary1)
+# print("----------")
+# dictionary["cat"] = "CAT"
+
+# print("dictionary: ", dictionary)
+# print("dictionary1: ", dictionary1)
+
+# dictionary1 = dictionary.copy()
+# dictionary["cat"] = "CATTTT"
+
+# print("dictionary: ", dictionary)
+# print("dictionary1: ", dictionary1)
+
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval"
+#             }
+
+# dictionary["cat"] = "123"
+# print(dictionary)
+# dictionary["parrot"] = "456"
+# print(dictionary)
+# del dictionary["cat"], dictionary["dog"]
+# print(dictionary)
+
+# pol_eng_dictionary = {"kwiat": "flower"}
+# pol_eng_dictionary.update({"gleba": "soil"})
+# print(pol_eng_dictionary)
+# pol_eng_dictionary.popitem()
+# print(pol_eng_dictionary)
+
+pol_eng_dictionary = {
+    "zamek": "castle",
+    "woda": "water",
+    "gleba": "soil"
+    }
+
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+
+if "castle".lower() in pol_eng_dictionary:
+   print("Yes")
+else:
+   print("No")
+
+pol_eng_dictionary.clear()
+print(pol_eng_dictionary)
