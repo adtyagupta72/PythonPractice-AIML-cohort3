@@ -1276,19 +1276,98 @@ Print #5:   [2, 3]
 # pol_eng_dictionary.popitem()
 # print(pol_eng_dictionary)
 
-pol_eng_dictionary = {
-    "zamek": "castle",
-    "woda": "water",
-    "gleba": "soil"
+# pol_eng_dictionary = {
+#     "zamek": "castle",
+#     "woda": "water",
+#     "gleba": "soil"
+#     }
+
+# for key, value in pol_eng_dictionary.items():
+#     print("Pol/Eng ->", key, ":", value)
+
+# if "castle".lower() in pol_eng_dictionary:
+#    print("Yes")
+# else:
+#    print("No")
+
+# pol_eng_dictionary.clear()
+# print(pol_eng_dictionary)
+
+'''
+You need a program to evaluate the students' average scores;
+-------The program should ask for the student's name, followed by her/his single score;-------
+The names may be entered in any order;
+-------Entering an empty name finishes the inputting of the data -------
+A list of all names, together with the evaluated average score, should be then emitted.
+
+Need: Average Score
+
+Input: Name, Marks => Stops if blank name is received
+
+    Adtya 70
+    Ankit 89
+    Abhishek 90
+    Mayur 79
+    Ankit 88
+    Abhishek 77
+    Adtya 89
+    Abhishek 79
+
+    Under the hood -> Data Storage
+    Adtya 70, 89
+    Ankit 89, 88
+    Abhishek 90, 77, 79
+    Mayur 79
+
+    {
+        "Adtya": (70, 89)
+        "Ankit": (89, 88)
+        "Abhishek": (90, 77, 79)
+        "Mayur": (79,)
     }
 
-for key, value in pol_eng_dictionary.items():
-    print("Pol/Eng ->", key, ":", value)
+Output:
+Adtya: 44.5
+Ankit: 78
+Abhishek: 67
+Mayur: 79
 
-if "castle".lower() in pol_eng_dictionary:
-   print("Yes")
-else:
-   print("No")
+Program---------------------------
 
-pol_eng_dictionary.clear()
-print(pol_eng_dictionary)
+name = input("Enter name")
+marks = float(input("Enter Marks"))
+a = {}
+
+myTupple = 12,
+
+while -> name
+    a[name] += marks,
+    name = input("Enter name")
+    marks = float(input("Enter Marks"))
+
+for key, values in studentMarks.items():
+    for elem in values:         values=> (70, 89), elem => 70
+        sum += elem
+        avg = sum/len(values)
+'''
+
+name = input("Enter name (press enter to exit): ")
+marks = float(input("Enter Marks: "))
+studentMarks = {}
+
+while name:
+    if name in studentMarks:
+        studentMarks[name] += (marks,)
+    else:
+        studentMarks.update({name: tuple((marks,))})
+    name = input("Enter name (press enter to exit): ")
+    if name:
+        marks = input("Enter Marks: ")
+        if marks:
+            marks = float(marks)
+
+print(studentMarks)
+
+for name, marks in studentMarks.items():
+    print(name, ":", sum(marks)/len(marks))
+
