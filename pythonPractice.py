@@ -1351,23 +1351,91 @@ for key, values in studentMarks.items():
         avg = sum/len(values)
 '''
 
-name = input("Enter name (press enter to exit): ")
-marks = float(input("Enter Marks: "))
-studentMarks = {}
+# name = input("Enter name (press enter to exit): ")
+# marks = float(input("Enter Marks: "))
+# studentMarks = {}
 
-while name:
-    if name in studentMarks:
-        studentMarks[name] += (marks,)
-    else:
-        studentMarks.update({name: tuple((marks,))})
-    name = input("Enter name (press enter to exit): ")
-    if name:
-        marks = input("Enter Marks: ")
-        if marks:
-            marks = float(marks)
+# while name:
+#     if name in studentMarks:
+#         studentMarks[name] += (marks,)
+#     else:
+#         studentMarks.update({name: tuple((marks,))})
+#     name = input("Enter name (press enter to exit): ")
+#     if name:
+#         marks = input("Enter Marks: ")
+#         if marks:
+#             marks = float(marks)
 
-print(studentMarks)
+# print(studentMarks)
 
-for name, marks in studentMarks.items():
-    print(name, ":", sum(marks)/len(marks))
+# for name, marks in studentMarks.items():
+#     print(name, ":", sum(marks)/len(marks))
 
+# while True:
+#     print("I'm stuck inside a loop.")
+
+# name = input("Enter you name: ")
+# print("Hey ", name)
+
+# age = int(input("Enter your Age: "))
+# print("You are ", age, "Years old")
+# print(type(age))
+# if type(age) == str:
+#     print("You will live ", (85 - int(age)), "Years more!")
+
+# value = int(input('Enter a natural number: '))
+# print('The reciprocal of', value, 'is', 1/value)
+
+# try:
+#     value = int(input('Enter a natural number: '))
+#     print('The reciprocal of', value, 'is', 1/value)        
+# except:
+#     print('I do not know what to do.')
+
+# try:
+#     value = int(input('Enter a natural number: '))
+#     print('The reciprocal of', value, 'is', 1/value)        
+# except ValueError:
+#     print('I do not know what to do.')    
+# except ZeroDivisionError:
+#     print('Division by zero is not allowed in our Universe.') 
+# except:
+#     print("I am not prepared for this")
+# try:
+#     short_list = [1]
+#     one_value = short_list[0.5]
+# except TypeError:
+#     print("Type Error is caught")
+
+# try:
+#     short_list = [1]
+#     short_list.append(2)
+#     short_list.depend(3)
+# except AttributeError:
+#     print("Error caught")
+
+# temperature = input('Enter current temperature:')
+# # print(type(float(temperature)))
+# try:
+#     temperature = float(temperature)
+#     if isinstance(temperature, float):
+#         if temperature > 0:
+#             print("Above zero")
+#         elif temperature < 0:
+#             print("Below zero")
+#         else:
+#             print("Zero")
+#     else:
+#         print("Only float values are allowed!")
+# except:
+#     print("Only float values are allowed!")
+
+
+
+temperature = float(input('Enter current temperature:'))
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    prin("Below zero")
+else:
+    print("Zero")
