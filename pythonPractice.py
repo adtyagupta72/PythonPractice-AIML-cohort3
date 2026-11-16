@@ -1432,10 +1432,77 @@ for key, values in studentMarks.items():
 
 
 
-temperature = float(input('Enter current temperature:'))
-if temperature > 0:
-    print("Above zero")
-elif temperature < 0:
-    prin("Below zero")
-else:
-    print("Zero")
+# temperature = float(input('Enter current temperature:'))
+# if temperature > 0:
+#     print("Above zero")
+# elif temperature < 0:
+#     prin("Below zero")
+# else:
+#     print("Zero")
+
+'''
+P1: I am thinking about a number between 1-100, can you Guess it?
+P2: 33
+P1: To low, try again...
+P2: 55
+P1: To low, try again...
+P2: 77
+P1: To high, try again...
+P2: 64
+P1: To low, try again...
+P2: 65
+P1: Correct! You guessed it in 5 attempts!
+
+random - for generating random number between 1-100
+while loop  - infinite
+    accept the input for guess
+    conditions check
+        - ==            Correct     break
+        - <             Too low
+        - >             Too High
+'''
+
+# import random
+# secret = random.randint(1, 100)
+# print("I am thinking about a number between 1-100, can you Guess it?")
+# attempts = 0
+# print("1")
+# while True:
+#     text = input("Enter your guess: ")
+#     if text.isdigit():
+#         guess = int(text)
+#     else:
+#         print("Please enter a whole number between 1-100!")
+#         continue
+#     print("2")
+#     # guess = int(input("Enter your guess: "))
+#     print("3")
+#     attempts += 1
+#     print("4")
+#     if guess == secret:
+#         print(f"Correct! You guessed it in {attempts} attempts!")
+#         print("5")
+#         break
+#     elif guess < secret:
+#         print("Too Low! Try again....")
+#         print("6")
+#     else:
+#         print("Too High! Try again....")
+#         print("7")
+'''
+School Management
+    class management
+        Class creation + Add Class Teacher
+        Add students
+        Mark attendance
+        Scoring
+        Ranker list preparation
+        Fees management
+
+Library management
+
+Memory game
+'''
+
+emojiList = ["🐧"]
+print(emojiList)
