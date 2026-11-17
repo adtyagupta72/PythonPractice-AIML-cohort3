@@ -1506,3 +1506,32 @@ Memory game
 
 emojiList = ["🐧"]
 print(emojiList)
+
+'''
+Number guessing game
+GST and bill calculator
+3 - School Management
+Electricity bill slab calculator
+Quiz app
+Expense tracker (CLI)
+2 - Library management system
+1 - Bank account simulator
+Password strength checker and generator
+To-do list with priorities and deadlines
+4 - Railway ticket booking system
+Text file analyser
+'''
+
+try:
+    num = 10 / 5
+    if num == 2:
+        raise AttributeError
+except AttributeError:
+    print("Attribute Error is raised!")
+except:
+    print("Exception raised!")
+else:
+    print("This is else")
+finally:
+    print("This is finally")
+
