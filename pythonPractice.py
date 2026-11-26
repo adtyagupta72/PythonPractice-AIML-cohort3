@@ -1504,8 +1504,8 @@ Library management
 Memory game
 '''
 
-emojiList = ["🐧"]
-print(emojiList)
+# emojiList = ["🐧"]
+# print(emojiList)
 
 '''
 Number guessing game
@@ -1522,16 +1522,80 @@ To-do list with priorities and deadlines
 Text file analyser
 '''
 
-try:
-    num = 10 / 5
-    if num == 2:
-        raise AttributeError
-except AttributeError:
-    print("Attribute Error is raised!")
-except:
-    print("Exception raised!")
-else:
-    print("This is else")
-finally:
-    print("This is finally")
+# try:
+#     num = 10 / 5
+#     if num == 2:
+#         raise AttributeError
+# except AttributeError:
+#     print("Attribute Error is raised!")
+# except:
+#     print("Exception raised!")
+# else:
+#     print("This is else")
+# finally:
+#     print("This is finally")
+'''
+0.0 - 1.0 => 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9535768927411208
+
+1 - 100
+0.9535768927411208 => * 100 => 95
+0.01 * 100 => 1
+'''
+
+# from random import random
+
+# for count in range(5):
+#     print(random())
+
+# for count in range(5):
+#     print(random() * 100)
+
+# from random import random, seed
+# seed(1)
+# for i in range(5):
+#     print(random() * 100)
+
+# from random import randrange, randint
+# print(randrange(11), end=' ')   # 11 is excluded
+# print(randrange(0, 11), end=' ')    # 11 is excluded
+# print(randrange(0, 11, 2), end=' ')   # 11 is excluded
+# print(randint(0, 11)) # 11 is inclusive
+
+# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+# 0, 2, 4, 6, 8, 10
+# 1, 3, 5, 7, 9, 11
+
+# for count in range(10):
+#     print(count)
+
+# print(range(10))
+
+
+# from random import randint
+# for i in range(10):
+#     print(randint(1, 10), end=',')
+
+# from random import choice, sample, seed
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# # seed(0)
+# print(choice(my_list))
+# print(sample(my_list, 5))
+# print(sample(my_list, 10))
+
+# from platform import platform, machine, processor, system, version
+# print(platform())
+# print(platform(1))
+# print(platform(0, 1))
+# print(machine())
+# print(processor())
+# print(system())
+# print(version())
+
+# from platform import python_implementation, python_version_tuple
+# print(python_implementation())
+# print(python_version_tuple())
+
+# for atr in python_version_tuple():
+#     print(atr, end="")
+#     print(".", end="")
 
